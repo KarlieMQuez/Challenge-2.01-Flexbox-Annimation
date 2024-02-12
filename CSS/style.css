@@ -44,6 +44,7 @@ p{
 .colorBorder{
     animation: imgBorder 10s infinite;
     border:5px solid rgb(126, 244, 126);
+    margin-left: 20px;
 }
 
 /* Define the annimation */
