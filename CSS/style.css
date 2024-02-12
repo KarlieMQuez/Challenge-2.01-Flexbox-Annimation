@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color: white;
+}
+
+.container{
+    display:flex;
+    width:100vw;
+    height: 50vh;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-item{
+    background-color: rgb(241, 241, 241);
+    width: 200px;
+    height:200px ;
+    margin:10px 10px;
+    padding:10px 10px;
+    border:1px solid rgb(8, 8, 8);
+    border-radius:5px;
+    align-items: center;
+}
+
+img{
+    width:75%;
+}
+
+
+p{
+    color:black;
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+.colorBorder{
+    animation: imgBorder 10s infinite;
+    border:5px solid rgb(126, 244, 126);
+}
+
+/* Define the annimation */
+@keyframes imgBorder {
+    /* stage - properties - values */
+    0% {
+        border-color: rgb(38, 168, 51);
+    }
+    25%{
+        border-color:rgb(38, 164, 168)
+    }
+    50%{
+        border-color:rgb(33, 30, 195);
+    }
+    75%{
+        border-color: rgb(125, 22, 169);
+    }
+    100%{
+        border-color:rgb(199, 63, 160);
+    }
+}
+
+.grow{
+    animation: imgSize 10s infinite;
+}
+
+
+@keyframes imgSize{
+    0%{
+        width:75%;
+    }
+    50%{
+        width:25%;
+    }
+    100%{
+        width:75%;
+    }
+}
+
+.colorText{
+    animation: rainbowText 10s infinite;
+    text-align: center;
+}
+
+@keyframes rainbowText{
+    0%{
+        color:red;
+        
+    }
+    20%{
+        color:orange;
+    }
+    40%{
+        color:yellow;
+    
+    }
+    60%{
+        color:green;
+    }
+    80%{
+        color:blue
+    }
+    100%{
+        color:purple;
+    }
+}
